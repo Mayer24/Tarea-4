@@ -29,7 +29,7 @@ body{
     &__link {
         border-radius: 2rem;
         text-decoration: none;
-        background: rgba($olive, 0.05);
+        background: rgba($olive, 0.10);
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
         color:$nyanza;
         font-family: "Inter", serif;
@@ -51,24 +51,13 @@ body{
 // ***slide***
 
 // ***pilares***
-h2{
-    display: flex;
-    justify-content: center;
-    color:$nyanza;
-    font-family: "Inter", serif;
-    font-size: 2rem;
-    padding: 1rem;
-    text-shadow: 0px 4px 4px rgba($raisin-black, 0.15);
+h2 {
+    @include title
 }
 h3 {
-    display: flex;
-    justify-content: center;
-    color:$nyanza;
-    font-family: "Inter", serif;
-    font-size: 2rem;
-    padding: 1rem;
-    text-shadow: 0px 4px 4px rgba($raisin-black, 0.15);
+    @include title 
 }
+
 p {
     display: flex;
     justify-content: center;
@@ -96,7 +85,7 @@ p {
         margin: 1rem;
          @media(max-width: 780px){
         display: grid;
-        padding: 20px;
+        padding: 2rem;
         align-items: center;
         }
      }
