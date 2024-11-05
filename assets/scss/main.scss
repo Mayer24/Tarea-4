@@ -1,3 +1,6 @@
-.body {
-    background-color: $ultra-violet;
+@import '_variables';
+@import '_mixin';
+
+.p{
+    background-color:$ultra-violet;
 }
