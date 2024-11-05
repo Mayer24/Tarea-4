@@ -1,17 +1,118 @@
 @import '_variables';
 @import '_mixin';
+@import '_reset'; 
 
+
+
+body{
+    background-color:$nyanza; 
+    background: url(https://wallpaperswide.com/download/lake_mcdonald_montana-wallpaper-1920x1080.jpg) lightgray 50%;
+}
+// ***header***
 .header {
-    background:$olive;
+    background: linear-gradient(0deg, rgba(100, 97, 160, 0.50) 0%, rgba(182, 140, 184, 0.50) 100%);
+    box-shadow: 0px 1px 15px 0px rgba(0, 0, 0, 0.25);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding:0 1rem;
-    @media(max-width: 750px){
+    padding: 1rem;
+    border-radius: 0px 0px 20px 20px;
+    @media(max-width: 780px){
         display: grid;
-        justify-content: center;
-        justify-items: center;
-        padding: 0 1rem;
-        margin:0 1rem;
+        justify-content: left;
+        justify-items: left;
+        padding:1rem;
+    }
+    &__image {
+        width: 100px;
+    }
+    &__link {
+        border-radius: 2rem;
+        text-decoration: none;
+        background: rgba($olive, 0.05);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+        color:$nyanza;
+        font-family: "Inter", serif;
+        font-size: 1rem;
+        padding: 1rem;
+        &:hover {
+            background: rgba($olive, 100);
+            color:$nyanza;
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+            transition: .5s;
+        }
+        @media(max-width: 780px){
+            display: grid;
+            margin-bottom: 1rem;
+        }
+        
     }
 }
+// ***slide***
+
+// ***pilares***
+h2{
+    display: flex;
+    justify-content: center;
+    color:$nyanza;
+    font-family: "Inter", serif;
+    font-size: 2rem;
+    padding: 1rem;
+    text-shadow: 0px 4px 4px rgba($raisin-black, 0.15);
+}
+h3 {
+    display: flex;
+    justify-content: center;
+    color:$nyanza;
+    font-family: "Inter", serif;
+    font-size: 2rem;
+    padding: 1rem;
+    text-shadow: 0px 4px 4px rgba($raisin-black, 0.15);
+}
+p {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color:$nyanza;
+    font-family: "Inter", serif;
+    font-size: 14px;
+    padding: 1rem;
+}
+.destinos{
+    background: linear-gradient(0deg, rgba(100, 97, 160, 0.50) 0%, rgba(182, 140, 184, 0.50) 100%);
+    border-radius: 20px 20px 20px 20px;
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+    @media(max-width: 780px){
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        padding: 2rem;
+     }
+     &__lugares {
+        display: grid;
+        justify-items: center;
+        margin: 1rem;
+         @media(max-width: 780px){
+        display: grid;
+        padding: 20px;
+        align-items: center;
+        }
+     }
+}
+.paisaje {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin: 2rem;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    @media(max-width: 780px){
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        align-items: center;
+      }
+}
+// ***footer***

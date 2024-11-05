@@ -3,3 +3,27 @@ $african-violet: #b68cb8ff;
 $ultra-violet: #6461a0ff;
 $olive: #849324ff;
 $nyanza: #dff2d8ff;
+
+// variables en gradientes 
+
+$gradient-top: linear-gradient(0deg, #262322ff, #b68cb8ff, #6461a0ff, #849324ff, #dff2d8ff);
+$gradient-right: linear-gradient(90deg, #262322ff, #b68cb8ff, #6461a0ff, #849324ff, #dff2d8ff);
+$gradient-bottom: linear-gradient(180deg, #262322ff, #b68cb8ff, #6461a0ff, #849324ff, #dff2d8ff);
+$gradient-left: linear-gradient(270deg, #262322ff, #b68cb8ff, #6461a0ff, #849324ff, #dff2d8ff);
+$gradient-top-right: linear-gradient(45deg, #262322ff, #b68cb8ff, #6461a0ff, #849324ff, #dff2d8ff);
+$gradient-bottom-right: linear-gradient(135deg, #262322ff, #b68cb8ff, #6461a0ff, #849324ff, #dff2d8ff);
+$gradient-top-left: linear-gradient(225deg, #262322ff, #b68cb8ff, #6461a0ff, #849324ff, #dff2d8ff);
+$gradient-bottom-left: linear-gradient(315deg, #262322ff, #b68cb8ff, #6461a0ff, #849324ff, #dff2d8ff);
+$gradient-radial: radial-gradient(#262322ff, #b68cb8ff, #6461a0ff, #849324ff, #dff2d8ff);
+
+// font
+// <uniquifier>: Use a unique and descriptive class name
+
+// .inter-<uniquifier> {
+//     font-family: "Inter", serif;
+//     font-optical-sizing: auto;
+//     font-weight: 500;
+//     font-style: normal;
+//   }
+
+// img
