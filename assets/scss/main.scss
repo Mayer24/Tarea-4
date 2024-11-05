@@ -1,6 +1,17 @@
 @import '_variables';
 @import '_mixin';
 
-.p{
-    background-color:$ultra-violet;
+.header {
+    background:$olive;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 1rem;
+    @media(max-width: 750px){
+        display: grid;
+        justify-content: center;
+        justify-items: center;
+        padding: 0 1rem;
+        margin:0 1rem;
+    }
 }
